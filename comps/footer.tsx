@@ -4,9 +4,9 @@ export interface FooterProps {
  
 const Footer: React.FunctionComponent<FooterProps> = () => {
     return ( 
-        <div>
+        <footer>
             <p>Copyright 2021 Ahmsanz</p>
-        </div>
+        </footer>
      );
 }
  
