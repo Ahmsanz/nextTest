@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
 export interface NavbarProps {
     
 }
@@ -8,7 +8,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
     return ( 
         <nav>
             <div className="logo">
-                <h1>Ninja List</h1>
+                <Image width={128} height={77} src="/logo.png"/>
             </div>
             <Link href='/'><a>Home</a></Link>
             <Link href='/about'><a>About</a></Link>
