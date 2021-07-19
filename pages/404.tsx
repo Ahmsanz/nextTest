@@ -12,7 +12,7 @@ const NotFound: React.FunctionComponent<NotFoundProps> = () => {
         setTimeout( () => {
             router.push('/');
         }, 3000)
-    }, []);
+    });
     return ( 
         <div className="not-found">
             <h1>Oooops...</h1>
