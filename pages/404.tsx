@@ -16,7 +16,7 @@ const NotFound: React.FunctionComponent<NotFoundProps> = () => {
     return ( 
         <div className="not-found">
             <h1>Oooops...</h1>
-                <h2>We coudn't get that, bro</h2>
+                <h2>We could not get that, bro</h2>
                 <p>Go back to the <Link href='/'><a>Homepage</a></Link></p>
         </div>
      );
