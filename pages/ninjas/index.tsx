@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../styles/Ninjas.module.css';
 
 export interface NinjasProps {
@@ -16,11 +17,11 @@ const Ninjas: React.FunctionComponent<NinjasProps> = ({ ninjas }) => {
         <div>
             <h1>All Ninjas</h1>
             {ninjas.map( (ninja: any) => (
-                <div>
+                <Link key={ninja.id} href={`/ninjas/${ninja.id}`}>
                     <a className={styles.single}>
                         <h3>{ninja.name}</h3>
                     </a>
-                </div>     
+                </Link>     
             ))}
         </div>
      );
